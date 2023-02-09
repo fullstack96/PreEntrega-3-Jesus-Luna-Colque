@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="inicio, homepage, home, venta, iniciar, loguin, entrar, usuario, registrarse">
+
+    <!-- Descripción -->
+    <meta name="description"
+        content="Bienvenidos al sitio de la tienda ficticia de LIJHEAM, acá podrás registrarte en la plataforma de la empresa">
+
+    <!--Logo en la pestaña-->
+    <link rel="shortcut icon" href="../img/lijheam.png" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!--Link de Bootstrap-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!--Css Propio-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>LIJHEAM | CREAR CUENTA </title>
+</head>
+
+<body>
+    <header class="fondo__nav">
+        <div class="nav__logo">
+            <a href="../index.html"><img src="../img/lijheam.png" alt="logo" class="img__logo"></a>
+        </div>
+
+        <form autocomplete="off" class="buscar">
+            <div>
+                <input class="lupa_uno" type="text" name="q" placeholder="Buscar">
+            </div>
+        </form>
+
+
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../img/menu.svg" alt="barra" class="img__barra">
+        </label>
+        <nav class="nav__menu">
+            <ul>
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">
+                        <img src="../img/inicio_house.png" alt="inicio" class="nav__img">
+                        <span class="nav__barra">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="../pages/Ofertas.html">
+                        <img src="../img/descuento.png" alt="descuento" class="nav__img">
+                        <span>Ofertas</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="../pages/iniciasesion.html">
+                        <img src="../img/historial.png" alt="historial" class="nav__img">
+                        <span>Inicia Sesion</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="crearcuenta.html">
+                        <img src="../img/auriculares.png" alt="Ayuda" class="nav__img">
+                        <span>Crear cuenta</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="../pages/moda.html">
+                        <img src="../img/moda.png" alt="moda" class="nav__img">
+                        <span>Moda</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/productos.html">
+                        <img src="../img/masvendido.png" alt="estrella" class="nav__img">
+                        <span>Mas vendidos</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/productos.html">
+                        <img src="../img/tienda.png" alt="tienda" class="nav__img">
+                        <span>Tiendas Oficiales</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/productos.html">
+                        <img src="../img/categoria.png" alt="categoria" class="nav__img">
+                        <span>Categorias</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <!--Crear Cuenta-->
+    <section id="registrarte__lijheam">
+        <h1 class="titulo__registrarte">Registro a LIJHEAM</h1>
+        <div class="container">
+            <h2>Registrate</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Apellido Completo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresar correctamente el correo electronico</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Repetir Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">confirmar</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="container">
+        <h3>Síguenos en nuestras redes sociales</h3>
+
+        <div class="container-redes">
+            <a href="#" target="_blank">
+                <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+
+            <a href="#" target="_blank">
+                <iconify-icon icon="uil:facebook"></iconify-icon>
+            </a>
+
+            <a href="#" target="_blank">
+                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+            </a>
+        </div>
+    </footer>
+</body>
+<!-- Iconify -->
+<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+<script src="https://kit.fontawesome.com/b5597accd8.js" crossorigin="anonymous"></script>
+<!--Javascript de bootstrap-->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,30 @@
+/*Estilos de La pagina Moda*/   
+
+    /*Titulo*/
+    #card_titulo2 {
+        background-color: yellow;
+        width: 800px;
+        height: 60px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    #carouselExampleFade {
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 14rem;
+    }
+
+    .carousel-inner_uno {
+        width: 500px;
+    }
+
+    .videos__uno {
+        width: 500px;
+        height: 450px;
+    }

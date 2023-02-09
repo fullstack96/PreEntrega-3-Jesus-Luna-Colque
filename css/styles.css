@@ -1,0 +1,542 @@
+@charset "UTF-8";
+/*Paleta de colores*/
+/*Tamaños de pantalla*/
+/*Separaciones (margin y padding)*/
+/*Tamaños de fuente*/
+/*Tamaño de img*/
+/*Fuente*/
+/*MIXIN*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lupa {
+  width: 10px;
+}
+
+.fondo__nav {
+  margin: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #fff159;
+}
+
+.img__logo {
+  width: 50px;
+}
+
+.img__barra {
+  width: 20px;
+}
+
+.nav__img {
+  width: 20px;
+}
+
+.nav__logo {
+  padding: 10px 8px;
+}
+
+/*Input Buscar*/
+.lupa_uno {
+  font: inherit;
+}
+
+.buscar {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.buscar div {
+  display: flex;
+  background: #fff;
+  padding: 9px 22px 9px 26px;
+  border-radius: 30px;
+  border: 2px solid #cad3dc;
+  box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 15px, rgba(0, 0, 0, 0.1) 10px 10px 10px, rgba(255, 255, 255, 0.5) -8px -8px 15px inset, rgba(0, 0, 0, 0.1) 10px 10px 10px inset;
+}
+
+.buscar .lupa_uno {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  padding-left: 24px;
+  background-image: url(../img/lupa.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  width: 0px;
+  transition: all 0.1s;
+}
+
+.buscar .lupa_uno:focus {
+  outline: none;
+  width: 300px;
+}
+
+/*Barra de menu*/
+#btn-menu {
+  display: none;
+}
+
+.fondo__nav label {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: -40px;
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+}
+
+.fondo__nav label:hover {
+  cursor: pointer;
+}
+
+.nav__menu {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 24px; /*Esto va enganchado con le margin: 24px de #btn-menu:checked ~ .nav__menu */
+  margin-left: -100%;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+
+.nav__menu a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav__menu span {
+  padding: 1rem;
+  font-size: 10px;
+}
+
+.nav__menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.nav__menu li {
+  border-top: 1px solid #fff;
+}
+
+#btn-menu:checked ~ .nav__menu {
+  margin: 24px 0px;
+}
+
+/*Carrusel de Imagenes del Inicio de la pagina  start*/
+.body_inicio {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  justify-self: center;
+  align-items: center;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slide input {
+  display: none;
+}
+
+.st {
+  width: 20%;
+  transition: 2s;
+}
+
+.st img {
+  width: 450px;
+  height: 400px;
+}
+
+.nav-m {
+  position: absolute;
+  left: -170px;
+  width: 800px;
+  margin-top: -140px;
+  display: flex;
+  justify-content: center;
+}
+
+.m-btn {
+  border: 2px solid #23e3c2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.m-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.m-btn:hover {
+  background: #23e3c2;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*Esto va enganchado con .nav-m por si queres hacer modificaciones*/
+.nav-auto {
+  position: absolute;
+  left: -170px;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-auto div {
+  border: 2px solid #23e3c2;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+  margin-right: 30px;
+  justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+  background-color: #23e3c2;
+}
+
+#radio2:checked ~ .nav-auto .a-b2 {
+  background-color: #23e3c2;
+}
+
+#radio3:checked ~ .nav-auto .a-b3 {
+  background-color: #23e3c2;
+}
+
+#radio4:checked ~ .nav-auto .a-b4 {
+  background-color: #23e3c2;
+}
+
+/*Carrusel de Imagenes del Inicio de la pagina  end*/
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container-redes a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/*Footer end*/
+/*Desktop*/
+/*Responsive a Desktop 1200px de la barra de Inicio start*/
+@media (min-width: 1200px) {
+  /*header Color amariilo start*/
+  .fondo__nav {
+    height: 105px;
+  }
+  /*header Color amariilo end*/
+  /*Tamaño Logo (Lijheam) start*/
+  .img__logo {
+    width: 100px;
+  }
+  /*Tamaño Logo (Lijheam) end*/
+  /*Boton Buscar start*/
+  .buscar {
+    margin-top: -75px;
+  }
+  /*Boton Buscar end*/
+  /*Imagen del a barra de (Nav) start*/
+  .img__barra {
+    width: 50px;
+  }
+  /*Imagen del a barra de (Nav) end*/
+  /*Para mover el (Nav) start*/
+  .fondo__nav label {
+    right: 20px;
+  }
+  /*Para mover el (Nav) end*/
+  /*Para cambiar el tamaño de los iconos del menu de (Nav) start*/
+  .nav__img {
+    width: 50px;
+  }
+  /*Para cambiar el tamaño de los iconos del menu de (Nav) end*/
+  /*Para cambiar tamaño de letra del menu de (Nav) start*/
+  .nav__menu span {
+    font-size: 20px;
+  }
+  /*Para cambiar tamaño de letra del menu de (Nav) end*/
+  /*Para mover el (Nav) start*/
+  .nav__menu {
+    margin-top: 36px;
+  }
+  #btn-menu:checked ~ .nav__menu {
+    margin: 36px 0px;
+  }
+  /*Para mover el (Nav) end*/
+  /*Titulo del carrusel   start*/
+  .calidad_empresa {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 10px;
+    width: 450px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+  }
+  /*Titulo del carrusel  end*/
+  /*Carrusel start*/
+  .section {
+    margin-top: 100px;
+  }
+  .slider {
+    width: 800px;
+    height: 500px;
+  }
+  .st img {
+    width: 800px;
+    height: 500px;
+  }
+  .nav-m {
+    position: absolute;
+    left: 200px;
+    width: 800px;
+    margin-top: -40px;
+  }
+  .nav-auto {
+    position: absolute;
+    left: 200px;
+    width: 800px;
+    margin-top: 460px;
+  }
+  /*Carrusel end*/
+}
+/*Responsive a Desktop 1200px de la barra de Inicio end*/
+/*Padre Card del Producto*/
+.card {
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  width: 344px;
+  height: 612px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 68px auto;
+  background-color: #ffffff;
+}
+
+.card__first-section__image {
+  width: 100%;
+  height: 300px;
+}
+
+/*Titulo Principal (camisa)*/
+.card__second-section__product-type {
+  color: #666666; /*Color de la letra*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; /*Tamaño de la letra*/
+  letter-spacing: 4px; /*Sirve para dar un espacio entre letra y letra*/
+  margin: 18px 24px 8px 24px; /*da espacio al texto de los demas textos 18px Top, 24px costados 8px abajo*/
+}
+
+/*Titulo Secundario (Camisa Lisa Azul)*/
+.card__second-section__title {
+  font-family: "Fraunces", serif;
+  margin: 0 24px 16px 24px;
+  font-size: 40px;
+  line-height: 36px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*Descripcion de la card (Camisa Lisa Azul)*/
+.card__second-section__description {
+  margin: 0 24px 44px 24px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.card__second-section__price {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: -25px 100px 10px; /* espacio 0 arribaa 24px a los costados 16px abajo*/
+}
+
+/*Precio Actual 149.99*/
+.card__second-section__description__descount {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  color: #00a650;
+}
+
+/*Precio anterior 166.99*/
+.card__second-section__description__value {
+  text-decoration: line-through;
+  color: #666666;
+  font-size: 13px;
+}
+
+/*Botton de (Agregar al carrito)*/
+.card__second-section__button {
+  width: 296px;
+  height: 50px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  display: block; /*Con esto ya convertimos el elemento en linea en bloque*/
+  margin: auto; /*Margin auto centra todos los elementos de bloque, pero en este caso un boton no es un elemento de bloque es un elemento de linea, entonces para convertir el boton en elemento en bloque se usa dislplay: block;*/
+  transition: 0.6s;
+}
+
+.card__second-section__button:hover {
+  cursor: pointer;
+  background-color: #fff159;
+}
+
+.card__second-section__button__icon {
+  margin-right: 12px;
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+  .card {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .card__first-section {
+    width: 300px;
+  }
+  .card__first-section__image {
+    width: 100%;
+    height: 500px;
+  }
+  .card__second-section {
+    width: 300px;
+  }
+  .card__second-section__product-type {
+    margin: 32px 24px 16px 24px;
+  }
+  .card__second-section__description {
+    line-height: 24px;
+    margin-top: 60px;
+  }
+  .card__second-section__price {
+    margin-top: 40px;
+  }
+  .card__second-section__button {
+    width: 240px;
+    margin-top: 20px;
+  }
+}
+/*Estilos de Ingresar*/
+/*Titulo*/
+#ingresar__lijheam {
+  width: 500px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 8rem;
+  background-color: yellow;
+}
+
+/*Estilos de Registrarse*/
+/*Formulario*/
+#registrarte__lijheam {
+  width: 500px;
+  height: 650px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: yellow;
+}
+
+/*Estilos de La pagina Moda*/
+/*Titulo*/
+#card_titulo2 {
+  background-color: yellow;
+  width: 800px;
+  height: 60px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+#carouselExampleFade {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 14rem;
+}
+
+.carousel-inner_uno {
+  width: 500px;
+}
+
+.videos__uno {
+  width: 500px;
+  height: 450px;
+}
+
+/*# sourceMappingURL=styles.css.map */

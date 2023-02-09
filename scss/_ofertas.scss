@@ -1,0 +1,119 @@
+/*Padre Card del Producto*/
+.card {
+    border: 5px solid rgba(0,0,0,.2);
+    width: $tamanoExtraGrande;
+    height: 612px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 68px auto;
+    background-color: $color-secundario;
+}
+
+.card__first-section__image {
+    width: 100%;
+    height: 300px;
+}
+/*Titulo Principal (camisa)*/
+.card__second-section__product-type {
+    color: $color-quinto; /*Color de la letra*/
+    font-family: $fuenteTerciario;
+    font-size: 14px; /*Tamaño de la letra*/
+    letter-spacing: 4px; /*Sirve para dar un espacio entre letra y letra*/
+    margin: 18px 24px 8px 24px;/*da espacio al texto de los demas textos 18px Top, 24px costados 8px abajo*/
+}
+/*Titulo Secundario (Camisa Lisa Azul)*/
+.card__second-section__title {
+    font-family: $fuenteSecundario;
+    margin: 0 24px 16px 24px;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: $color-terciario;
+}
+/*Descripcion de la card (Camisa Lisa Azul)*/
+.card__second-section__description {
+    margin: 0 24px 44px 24px;
+    color: $color-quinto;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.card__second-section__price {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: -25px 100px 10px;/* espacio 0 arribaa 24px a los costados 16px abajo*/
+}
+/*Precio Actual 149.99*/
+.card__second-section__description__descount{
+    font-family: $fuenteSecundario;
+    font-size: $tamanoExtraChico;
+    color: $color-sexto;
+}
+/*Precio anterior 166.99*/
+.card__second-section__description__value {
+    text-decoration: line-through;
+    color: $color-quinto;
+    font-size: 13px;
+}
+/*Botton de (Agregar al carrito)*/
+.card__second-section__button {
+    width: 296px;
+    height: 50px;
+    background-color: $color-secundario;
+    border: none;
+    border-radius: 8px;
+    color: $color-terciario;
+    font-family: $fuenteTerciario;
+    font-size: 10px;
+    font-weight: 700;
+    display: block;/*Con esto ya convertimos el elemento en linea en bloque*/
+    margin: auto;/*Margin auto centra todos los elementos de bloque, pero en este caso un boton no es un elemento de bloque es un elemento de linea, entonces para convertir el boton en elemento en bloque se usa dislplay: block;*/
+    transition: .6s;
+}
+
+.card__second-section__button:hover {
+    cursor: pointer;
+    background-color: $color-septimo;
+}
+
+.card__second-section__button__icon {
+    margin-right: 12px;
+}
+
+/*Desktop*/
+
+@media (min-width: $desktopXG) {
+    .card {
+        width: 600px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card__first-section{
+        width: 300px;
+    }
+    .card__first-section__image {
+        width: 100%;
+        height: 500px;
+    }
+    .card__second-section {
+        width: 300px;
+    }
+
+    .card__second-section__product-type {
+        margin: 32px 24px 16px 24px;
+    }
+    .card__second-section__description {
+        line-height: 24px;
+        margin-top: 60px;
+    }
+    .card__second-section__price {
+        margin-top: 40px;
+    }
+    .card__second-section__button{
+        width: 240px;
+        margin-top: 20px;
+    }
+}
