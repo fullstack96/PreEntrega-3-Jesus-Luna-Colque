@@ -82,7 +82,7 @@ img {
 
 .buscar .lupa_uno:focus {
   outline: none;
-  width: 300px;
+  width: 135px;
 }
 
 /*Barra de menu*/
@@ -152,6 +152,11 @@ img {
   align-items: center;
 }
 
+.calidad_empresa {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .section {
   margin: 0;
   padding: 0;
@@ -162,8 +167,8 @@ img {
 }
 
 .slider {
-  width: 450px;
-  height: 400px;
+  width: 270px;
+  height: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -184,22 +189,22 @@ img {
 }
 
 .st img {
-  width: 450px;
-  height: 400px;
+  width: 270px;
+  height: 300px;
 }
 
 .nav-m {
   position: absolute;
-  left: -170px;
-  width: 800px;
-  margin-top: -140px;
+  left: 55px;
+  width: 200px;
+  margin-top: 260px;
   display: flex;
   justify-content: center;
 }
 
 .m-btn {
   border: 2px solid #23e3c2;
-  padding: 5px;
+  padding: 3px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
@@ -232,16 +237,16 @@ img {
 /*Esto va enganchado con .nav-m por si queres hacer modificaciones*/
 .nav-auto {
   position: absolute;
-  left: -170px;
-  width: 800px;
-  margin-top: 360px;
+  left: 55px;
+  width: 200px;
+  margin-top: 260px;
   display: flex;
   justify-content: center;
 }
 
 .nav-auto div {
   border: 2px solid #23e3c2;
-  padding: 5px;
+  padding: 3px;
   border-radius: 10px;
   transition: 1s;
 }
@@ -273,6 +278,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+footer h3 {
+  text-align: center;
 }
 footer .container-redes a {
   color: rgba(0, 0, 0, 0.8);
