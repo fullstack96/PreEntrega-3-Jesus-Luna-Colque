@@ -91,13 +91,14 @@ img {
 }
 
 .fondo__nav label {
-  display: block;
+  display: inline-block;
   position: absolute;
-  top: 15px;
-  right: -40px;
-  width: 100px;
-  height: 30px;
+  top: 7px;
+  right: 14px;
+  /*width: 47px; */
+  /*height: 44px; */
   padding: 10px;
+  /* border: 2px solid red; */
 }
 
 .fondo__nav label:hover {
@@ -146,7 +147,7 @@ img {
 .body_inicio {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  /* height: 100vh;*/
   justify-self: center;
   align-items: center;
 }
