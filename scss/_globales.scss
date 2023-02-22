@@ -142,6 +142,7 @@ img {
 .section {
     margin: 0;
     padding: 0;
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -177,9 +178,9 @@ img {
 
 .nav-m {
     position: absolute;
-    left: 55px;
-    width: 200px;
-    margin-top: 260px;
+    left: 3px;
+    width: 100%;
+    top: 400px;
     display: flex;
     justify-content: center;
 }
@@ -215,9 +216,9 @@ img {
 /*Esto va enganchado con .nav-m por si queres hacer modificaciones*/
 .nav-auto{
     position: absolute;
-    left: 55px;
-    width: 200px;
-    margin-top: 260px;
+    left: 3px;
+    width: 100%;
+    top: 400px;
     display: flex;
     justify-content: center;
 }
@@ -344,16 +345,16 @@ footer {
 
     .nav-m {
         position: absolute;
-        left: 200px;
-        width: 800px;
-        margin-top: -40px;
+        left: 5px;
+        width: 100%;
+        margin-top: 450px;
     }
 
     .nav-auto{
         position: absolute;
-        left: 200px;
-        width: 800px;
-        margin-top: 460px;
+        left: 5px;
+        width:100%;
+        margin-top: 450px;
     }
     /*Carrusel end*/
 }
